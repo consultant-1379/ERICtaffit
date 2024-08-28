@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="../assets/1/css/assets.css"/>
+    <link href="resources/favicon.ico" rel="icon" type="image/x-icon"/>
+
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.03);
+            overflow: hidden;
+        }
+
+        @media screen and (max-width: 549px), screen and (max-height: 499px) {
+            html, body {
+                font-size: 9px !important;
+                background-color: #E9E9E9;
+            }
+        }
+    </style>
+
+    <script type="text/javascript" src="../container/require.js"></script>
+    <script type="text/javascript">
+        require.config({
+            baseUrl: '..'
+        });
+        require(['login/Login'], function (Login) {
+            var container = document.getElementById('Container');
+            var login = new Login();
+            login.start(container);
+        });
+    </script>
+</head>
+<body>
+<div id="Container" class="eaLogin"></div>
+</body>
+</html>

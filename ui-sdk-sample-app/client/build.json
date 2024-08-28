@@ -1,0 +1,96 @@
+{
+    "parent": "$(parentJson)/app.json",
+    "defaultPhase": "package",
+    "properties": {
+        "package": "membersapp",
+        "name": "MembersApp",
+        "version": "1.0.0",
+        "skeleton": "2.1.0",
+        "skeletonType": "app"
+    },
+    "phases": {
+        "dev-dependencies": {
+            "execute": {
+                "command": "$(npm)",
+                "attributes": [
+                    "install",
+                    "--no-bin-links",
+                    "--no-optional"
+                ]
+            }
+        },
+        "source-verify": {
+            "depends": [
+                "dev-dependencies"
+            ],
+            "execute": {
+                "command": "$(node) build-scripts/verifySources.js"
+            }
+        },
+        "code-style-verify": {
+            "depends": [
+                "dev-dependencies"
+            ],
+            "execute": {
+                "command": "$(node) node_modules/jscs/bin/jscs",
+                "attributes": [
+                    ".",
+                    "--config=.jscsrc",
+                    "--reporter=inline"
+                ]
+            }
+        },
+        "code-verify": {
+            "depends": [
+                "dev-dependencies"
+            ],
+            "execute": {
+                "command": "$(node) node_modules/jshint/bin/jshint",
+                "attributes": [
+                    ".",
+                    "--config=.jshintrc",
+                    "--exclude-path=.jshintignore"
+                ]
+            }
+        },
+        "css-verify": {
+            "execute": {
+                "command": "$(cssverify)",
+                "attributes": [
+                    "--name",
+                    "$(name)",
+                    "src/$(package)"
+                ]
+            }
+        },
+        "build-app": {
+            "depends": [
+                "compile",
+                "compress"
+            ]
+        },
+        "package-skip-tests": {
+            "depends": [
+                "clean",
+                "build-app"
+            ]
+        },
+        "package": {
+            "depends": [
+                "clean",
+                "analyze",
+                "test",
+                "build-app"
+            ]
+        }
+    },
+    "dependencies": {
+        "i18n": "2.0.8",
+        "login": "0.1.3",
+        "widgets": "1.4.3",
+        "tablelib": "0.4.4",
+        "jscore": "1.3.4",
+        "assets": "1.4.1",
+        "container": "1.9.6"
+    }
+}

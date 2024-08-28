@@ -1,0 +1,6 @@
+*.config.js
+.cdt/**
+configs/**
+help/**
+node_modules/**
+target/**

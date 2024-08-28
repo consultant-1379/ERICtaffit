@@ -1,0 +1,6 @@
+testCaseId,hostname,loginUsername,expectedOriginalUsername,newHostname,newUsername,newPassword,strictHostChecking,expectedHostIP,expectedUsername,expectedExceptionMessage
+TAF_HopBuilder_Func_006,ms1,root,root,svc1,litp-admin,12shroot,false,192.168.0.202,litp-admin,
+TAF_HopBuilder_Func_006,ms1,root,root,svc1,litp-admin,12shroot,true,192.168.0.202,litp-admin,
+TAF_HopBuilder_Func_007,ms1,root,root,svc1,new_oper,12shroot,false,192.168.0.42,root,"Password was not accepted new_oper/12shroot"
+TAF_HopBuilder_Func_008,ms1,root,root,nonExistentHost,litp-admin,12shroot,true,192.168.0.42,root,"Destination Host Unreachable"
+TAF_HopBuilder_Func_012,ms1,root,root,svc1,litp-admin,13shroot,true,192.168.0.42,root,"Password was not accepted litp-admin/13shroot"

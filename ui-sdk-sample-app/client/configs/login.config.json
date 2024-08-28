@@ -1,0 +1,7 @@
+{
+    "restServer": "/api/",
+    "gotoBasePath": "../index.html#",
+    "defaultGoto": "membersapp",
+    "title": "Team Members Application",
+    "loginUrl": "login"
+}

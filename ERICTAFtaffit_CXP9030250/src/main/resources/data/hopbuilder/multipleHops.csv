@@ -1,0 +1,2 @@
+hostname,loginUsername,expectedOriginalUsername,newHostname,strictHostChecking,expectedNewHostIP,expectedUsername,expectedExceptionMessage,expectedUser
+ms1,root,root,svc1,false,192.168.0.202,litp-admin,,litp-admin

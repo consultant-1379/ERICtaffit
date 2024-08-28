@@ -1,0 +1,29 @@
+{
+    "id": "16",
+    "name": "John",
+    "surname": "Smith",
+    "role": {
+        "name": "Scrum Master",
+        "value": 10
+    },
+    "signum": "enikoal",
+    "email": "john.smith@ericsson.com",
+    "description": "Admiral of New England",
+    "teams": [
+        {
+            "name": "Cinema",
+            "value": 7
+        },
+        {
+            "name": "ENM",
+            "value": 8
+        }
+    ],
+    "hasLaptop": true,
+    "hasAccess": true,
+    "gender": {
+        "name": "Male",
+        "value": 1
+    }
+}
+

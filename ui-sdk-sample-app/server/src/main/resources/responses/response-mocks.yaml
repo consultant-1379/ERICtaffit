@@ -1,0 +1,190 @@
+# /login resource
+-  request:
+      method: GET
+      url: /api/login
+
+   response:
+      status: 200
+      headers:
+         content-type: application/json
+      body: '{"authenticated":true}'
+
+-  request:
+      method: DELETE
+      url: /api/login
+
+   response:
+      status: 200
+      headers:
+         content-type: application/json
+      body: '{"authenticated":false}'
+
+-  request:
+      method: POST
+      url: /api/login
+      post: '{"username":"taf","password":"taf"}'
+
+   response:
+      status: 200
+      headers:
+         content-type: application/json
+      body: '{"result":"ok"}'
+
+-  request:
+      method: POST
+      url: /api/login
+
+   response:
+      status: 403
+      headers:
+         content-type: application/json
+      body: '{"message":"Please enter a correct Ericsson ID and password.","developerMessage":""}'
+
+# /members resource
+-  request:
+      method: GET
+      url: /api/members
+      query:
+         perPage: 10
+         page: 1
+         q: any~Victor
+
+   response:
+      status: 200
+      headers:
+         content-type: application/json
+      file: members-by-search.json
+
+-  request:
+      method: GET
+      url: /api/members
+      query:
+         perPage: 10
+         page: 1
+         q: "teams%3DTAF"
+
+   response:
+      status: 200
+      headers:
+         content-type: application/json
+      file: members-by-filter-teams.json
+
+-  request:
+      method: GET
+      url: /api/members
+      query:
+         perPage: 10
+         page: 1
+         q: "role~Developer"
+
+   response:
+      status: 200
+      headers:
+         content-type: application/json
+      file: members-by-filter-role.json
+
+-  request:
+      method: GET
+      url: /api/members
+      query:
+         perPage: 10
+         page: 1
+
+   response:
+      status: 200
+      headers:
+         content-type: application/json
+      file: membersPage1.json
+
+-  request:
+      method: GET
+      url: /api/members
+      query:
+         perPage: 10
+         page: 2
+
+   response:
+      status: 200
+      headers:
+         content-type: application/json
+      file: membersPage2.json
+
+-  request:
+      method: GET
+      url: /api/members
+      query:
+         perPage: 5
+         page: 1
+
+   response:
+      status: 200
+      headers:
+         content-type: application/json
+      file: members5PerPage.json
+
+-  request:
+      method: GET
+      url: /api/members
+      query:
+         perPage: 20
+         page: 1
+
+   response:
+      status: 200
+      headers:
+         content-type: application/json
+      file: members20PerPage.json
+
+# save member mocks
+-  request:
+      method: POST
+      url: /api/members
+      post: '{"name":"","surname":"","email":"","description":"","role":{},"teams":[],"hasLaptop":false,"hasAccess":false,"gender":null}'
+
+   response:
+      status: 400
+      headers:
+         content-type: application/json
+      file: create-member-emptyFields.json
+
+-  request:
+      method: POST
+      url: /api/members
+      post: '{"name":"John","surname":"Smith","email":"john.smith@ericsson.com","description":"Admiral of New England","role":{"name":"Scrum Master","value":10,"title":"Scrum Master","_action":true},"teams":[{"name":"Cinema","value":7,"title":"Cinema","checked":true},{"name":"ENM","value":8,"title":"ENM","checked":true}],"hasLaptop":true,"hasAccess":true,"gender":{"name":"Male","value":1}}'
+
+   response:
+      status: 201
+      headers:
+         content-type: application/json
+      file: created-member-data.json
+
+-  request:
+      method: POST
+      url: /api/members
+
+   response:
+      status: 400
+      headers:
+         content-type: application/json
+      file: create-member-errorRequest.json
+
+# /files resource
+-  request:
+      method: POST
+      url: /api/files
+
+   response:
+      status: 201
+      headers:
+         content-type: application/json
+      body: '{"id": 2, "name": "uploaded-file.jpg"}'
+
+-  request:
+      method: GET
+      url: /api/files/2
+
+   response:
+      status: 200
+      headers:
+         content-type: application/json
+      body: '{"id": 2, "name": "uploaded-file.jpg"}'

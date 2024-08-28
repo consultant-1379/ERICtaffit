@@ -1,0 +1,7 @@
+[
+    {
+        "message": "Server is waiting for 'John Smith' to be added. Check mock requests please.",
+        "messageTemplate": "Field '{value}' must not be null or empty",
+        "invalidValue": null
+    }
+]

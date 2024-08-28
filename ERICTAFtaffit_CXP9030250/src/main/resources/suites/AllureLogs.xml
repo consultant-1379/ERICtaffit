@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AllureLogs_Test_Suite">
+
+    <test name="AllureLogs_Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.ui.AllureLogsTest"/>
+        </classes>
+    </test>
+
+</suite>

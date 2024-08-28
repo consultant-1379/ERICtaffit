@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NetsimSuite">
+    <!-- Run sequentiually as tests start and stop NE's -->
+    <test name="Netsim Handler Test Sequential" preserve-order="true" parallel="none">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.netsim.NetsimInformation" />
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.netsim.NetSimCommandHandlerTest" />
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.netsim.NetworkElementTest" />
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.netsim.DumpMoTreeCommandTest" />
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.netsim.NetsimTest" />
+        </classes>
+    </test>
+    <test name="Netsim Handler Test Parallel" preserve-order="true" parallel="classes">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.netsim.SimulationTest" />
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.netsim.NeGroupTest" />
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.netsim.AvcburstCommandTest" />
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.netsim.configAddNewPortTest" />
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.netsim.LdapCommandTest" />
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.netsim.ResultProcessorTest" />
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.netsim.SimulationGroupTest" />
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.netsim.SshNetSimContextTest" />
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.netsim.SshNetSimSessionTest" />
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.netsim.ShowSimulationsCommandTest" />
+        </classes>
+    </test>
+</suite>

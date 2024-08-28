@@ -1,0 +1,63 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CLI Tool Test Suite" parallel="tests">
+
+    <test name="CLI_Tool_Environment_Variable_Use_Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.tools.cli.CliToolEnvironmentVariablesUseTest"/>
+        </classes>
+    </test>
+
+    <test name="CLI_Tool_Remote_Script_Execution_Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.tools.cli.CliRemoteScriptExecutionTest"/>
+        </classes>
+    </test>
+
+    <test name="CLI_Telnet_Shell_Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.tools.cli.CliTelnetTest"/>
+        </classes>
+    </test>
+
+    <test name="CLI_Environment_Variables_Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.tools.cli.CLIEnvironmentVariablesTest"/>
+        </classes>
+    </test>
+
+    <test name="CLI_Execute_Command_Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.tools.cli.CLIExecuteCommandTest"/>
+        </classes>
+    </test>
+
+    <test name="CLI_Netsim_Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.tools.cli.CLINetsimTest"/>
+        </classes>
+    </test>
+
+    <test name="CLI_Null_Terminal_Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.tools.cli.CLINullTerminalTest"/>
+        </classes>
+    </test>
+
+    <test name="CLI_Shell_Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.tools.cli.CLIShellTest"/>
+        </classes>
+    </test>
+
+    <test name="CLI_Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.tools.cli.CLITest"/>
+        </classes>
+    </test>
+
+    <test name="Command_Helper_Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.tools.cli.CommandHelperTest"/>
+        </classes>
+    </test>
+</suite>

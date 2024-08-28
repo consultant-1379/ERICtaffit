@@ -1,0 +1,38 @@
+.eaMembersApp-StringFilter {
+    &-wrapper {
+        width: 100%;
+        height: 2.6rem;
+        font-size: 0;
+    }
+
+    &-options {
+        display: inline-block;
+        width: 26px;
+        height: 100%;
+    }
+
+    &-input {
+        display: inline-block;
+        vertical-align: top;
+        border: none;
+        outline: none;
+        padding: 0 5px;
+        height: 2.6rem;
+        width: calc(~"100% - 36px");
+    }
+
+    &-input::-webkit-input-placeholder {
+        opacity: 0;
+    }
+    &-input:hover::-webkit-input-placeholder {
+        opacity: 1;
+    }
+
+    &-input::-moz-placeholder {
+        opacity: 0;
+    }
+    &-input:hover::-moz-placeholder {
+        opacity: 1;
+    }
+
+}

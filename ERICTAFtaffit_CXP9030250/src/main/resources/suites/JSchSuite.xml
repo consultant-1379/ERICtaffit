@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="JSch Test Suite" parallel="tests">
+
+    <test name="JSch_Exec_Test" preserve-order="true">
+        <classes>
+            <!--TODO: enable the test when netsim host is reachable from Jenkins.
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.cli.jsch.JSchExecTest"/>-->
+        </classes>
+    </test>
+
+    <test name="JSch_Session_Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.tools.cli.jsch.JSchSessionTest"/>
+        </classes>
+    </test>
+
+    <test name="JSch_Shell_Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.tools.cli.jsch.JSchShellTest"/>
+        </classes>
+    </test>
+
+    <test name="VT100_Parser_Terminal_Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.tools.cli.jsch.VT100ParserTerminalTest"/>
+        </classes>
+    </test>
+
+    <test name="XTERM_Terminal_Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.tools.cli.jsch.XTERMTerminalTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,46 @@
+{
+    "excludeFiles": [
+        "*.config.js",
+        ".cdt/**",
+        "configs/**",
+        "help/**",
+        "node_modules/**",
+        "target/**"
+    ],
+    "requireSpaceAfterKeywords": true,
+    "requireSpaceBeforeBlockStatements": true,
+    "requireParenthesesAroundIIFE": true,
+    "requireSpacesInConditionalExpression": true,
+    "requireSpacesInFunction": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+    "disallowSpacesInCallExpression": true,
+    "requireBlocksOnNewline": 1,
+    "disallowSpacesInsideParentheses": true,
+    "disallowQuotedKeysInObjects": "allButReserved",
+    "disallowSpaceAfterObjectKeys": true,
+    "requireSpaceBeforeObjectValues": true,
+    "requireCommaBeforeLineBreak": true,
+    "disallowSpaceAfterPrefixUnaryOperators": true,
+    "disallowSpaceBeforePostfixUnaryOperators": true,
+    "requireSpaceBeforeBinaryOperators": true,
+    "requireSpaceAfterBinaryOperators": true,
+    "disallowImplicitTypeConversion": [
+        "numeric",
+        "boolean",
+        "binary",
+        "string"
+    ],
+    "requireCamelCaseOrUpperCaseIdentifiers": true,
+    "disallowKeywords": ["with"],
+    "disallowMultipleLineBreaks": true,
+    "disallowMixedSpacesAndTabs": true,
+    "disallowTrailingWhitespace": true,
+    "disallowTrailingComma": true,
+    "disallowKeywordsOnNewLine": ["else"],
+    "requireLineFeedAtFileEnd": true,
+    //"maximumLineLength": 120,
+    "disallowNewlineBeforeBlockStatements": true,
+    "validateParameterSeparator": ", "
+}

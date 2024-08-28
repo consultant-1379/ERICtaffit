@@ -1,0 +1,8 @@
+<span>
+    {{#if requirements}}
+        {{#each requirements}}
+            <a target="_blank" href="{{this.permanentUrl}}{{this.data}}">{{this.data}}</a>,
+        {{/each}}
+    {{/if}}
+    <a target="_blank" href="{{lastRequirement.permanentUrl}}{{lastRequirement.data}}">{{lastRequirement.data}}</a>
+</span>

@@ -1,0 +1,166 @@
+{
+    "totalCount": 15,
+    "items": [
+        {
+            "id": "1",
+            "name": "Victor",
+            "surname": "Ovchinnikov",
+            "role": {
+                "name": "Lead Cook & Wan Fu"
+            },
+            "signum": "evicovc",
+            "email": "victor.ovchinnikov@ericsson.com",
+            "teams": [
+                {
+                    "name": "TAF"
+                },
+                {
+                    "name": "TMS"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Alexey",
+            "surname": "Nikolaenko",
+            "role": {
+                "name": "Samurai"
+            },
+            "signum": "enikoal",
+            "email": "alexey.nikolaenko@ericsson.com",
+            "teams": [
+                {
+                    "name": "TAF"
+                },
+                {
+                    "name": "Test Registry"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "name": "Dmitry",
+            "surname": "Novikov",
+            "role": {
+                "name": "Architect"
+            },
+            "signum": "edminov",
+            "email": "dmitry.novikov@ericsson.com",
+            "teams": [
+                {
+                    "name": "TAF"
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "name": "Vasja",
+            "surname": "Bigboss",
+            "role": {
+                "name": "Worker"
+            },
+            "signum": "evasbig",
+            "email": "vasja.bigboss@ericsson.com",
+            "teams": [
+                {
+                    "name": "Ericsson Builder"
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "name": "Victor",
+            "surname": "Pupkin",
+            "role": {
+                "name": "Web Developer"
+            },
+            "signum": "evicpup",
+            "email": "victor.pupkin@ericsson.com",
+            "teams": [
+                {
+                    "name": "TMS"
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "name": "Pavel",
+            "surname": "Bykov",
+            "role": {
+                "name": "Worker"
+            },
+            "signum": "edminov",
+            "email": "pavel.bykov@ericsson.com",
+            "teams": [
+                {
+                    "name": "Ericsson Builder"
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "name": "Andrew",
+            "surname": "White",
+            "role": {
+                "name": "DB master"
+            },
+            "signum": "edminov",
+            "email": "andrew.white@ericsson.com",
+            "teams": [
+                {
+                    "name": "TMS"
+                }
+            ]
+        },
+        {
+            "id": "8",
+            "name": "Mihails",
+            "surname": "Volkovs",
+            "role": {
+                "name": "Software Developer"
+            },
+            "signum": "emihvol",
+            "email": "mihails.volkovs@ericsson.com",
+            "teams": [
+                {
+                    "name": "TAF"
+                }
+            ]
+        },
+        {
+            "id": "9",
+            "name": "Valery",
+            "surname": "Shanin",
+            "role": {
+                "name": "Software Developer"
+            },
+            "signum": "evalsha",
+            "email": "valery.shanin@ericsson.com",
+            "team": [
+                {
+                    "name": "TMS"
+                }
+            ]
+        },
+        {
+            "id": "10",
+            "name": "Sergey",
+            "surname": "Bezrukov",
+            "role": {
+                "name": "Artist"
+            },
+            "signum": "eserbez",
+            "email": "sergey.bezrukov@ericsson.com",
+            "teams": [
+                {
+                    "name": "Cinema"
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "query": {
+            "criteria": {}
+        }
+    }
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Data Driven Test Suite">
+
+    <test name="DataDriven_Func" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.datadriven.DataDrivenFuncTests"/>
+        </classes>
+    </test>
+
+    <test name="DataDriven_Scenarios" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.datadriven.DataDrivenScenarioTest"/>
+        </classes>
+    </test>
+
+</suite>

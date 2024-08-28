@@ -1,0 +1,2 @@
+hostname,loginUsername,expectedOriginalUsername,newHostname,strictHostChecking
+gateway,root,root,svc1,false

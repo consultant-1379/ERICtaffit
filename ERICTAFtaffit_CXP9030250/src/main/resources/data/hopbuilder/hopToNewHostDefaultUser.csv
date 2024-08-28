@@ -1,0 +1,6 @@
+testCaseId,hostname,strictHostChecking,loginUsername,expectedOriginalUsername,newHostname,expectedNewHostIP,expectedUsername,expectedExceptionMessage
+TAF_HopBuilder_Func_003,ms1,true,root,root,svc1,192.168.0.202,litp-admin,
+TAF_HopBuilder_Func_003,ms1,false,root,root,svc1,192.168.0.202,litp-admin,
+TAF_HopBuilder_Func_004,ms1,false,root,root,selenium_grid,192.168.0.42,root,"Password was not accepted litp-admin/12shroot"
+TAF_HopBuilder_Func_005,ms1,false,root,root,nonExistentHost,192.168.0.42,root,"Destination Host Unreachable"
+TAF_HopBuilder_Func_013,ms1,false,root,root,bad_port,192.168.0.42,root,"No route to host"

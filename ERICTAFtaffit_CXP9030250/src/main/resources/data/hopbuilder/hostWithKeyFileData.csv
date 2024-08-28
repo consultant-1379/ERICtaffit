@@ -1,0 +1,2 @@
+hostname,vmHostname,pathToKeyFile,loginUsername,expectedOriginalUsername,cloudUser,cloudUserPassword,userType,strictAuthentication
+ms1,pmserv_1,/root/.ssh/vm_private_key,root,root,cloud-user,dummy,OPER,true

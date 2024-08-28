@@ -1,0 +1,13 @@
+{
+    "id": "2",
+    "name": "Alexey",
+    "surname": "Nikolaenko",
+    "role": {
+        "name": "Samurai"
+    },
+    "signum": "enikoal",
+    "email": "alexey.nikolaenko@ericsson.com",
+    "teams": [
+        {"name": "Test Registry"}
+    ]
+}

@@ -1,0 +1,3 @@
+testCaseId,hostname,loginUsername,expectedOriginalUsername,newHostname,newUsername,newPassword,strictHostChecking,expectedNewHostIP
+TAF_HopBuilder_Func_014,ms1,root,root,db-1,litp-admin,12shroot,false,10.247.246.4
+TAF_HopBuilder_Func_014,ms1,root,root,hostNotInEtcFile,root,passw0rd,false,10.10.10.10

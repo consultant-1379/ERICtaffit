@@ -1,0 +1,80 @@
+.applyBorderRadius(@params) {
+    -webkit-border-radius: @params;
+    -moz-border-radius: @params;
+    -ms-border-radius: @params;
+    border-radius: @params;
+}
+
+.applyAnimation(@params) {
+    -webkit-animation: @params;
+    -moz-animation: @params;
+    animation: @params;
+}
+
+.applyTransform(@params) {
+    -webkit-transform: @params;
+    -moz-transform: @params;
+    transform: @params;
+}
+
+.ebNotification {
+    display: block;
+    margin: 0.6rem 0;
+}
+
+.ebQuickActionBar {
+    padding: 0;
+    line-height: 2.4rem;
+
+    > * {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    &-commands {
+        margin: 0.4rem 0;
+    }
+
+    &-back {
+        padding: 0.4rem 0.8rem;
+        font-size: 1.2rem;
+        display: inline-block;
+        cursor: pointer;
+        vertical-align: middle;
+
+        .applyBorderRadius(~"3px 0 0 3px");
+
+        &:hover {
+            background-color: #D2D2D2;
+        }
+        &:active {
+            background-color: #E0E0E0;
+        }
+
+        &Icon {
+            display: inline-block;
+        }
+        &Text {
+            display: inline-block;
+        }
+    }
+}
+
+.ebTable thead tr th.ebTable-noPadding {
+    padding: 0;
+
+    .ebTable-header {
+        padding-right: 0;
+    }
+    .ebTable-headerSort {
+        right: 4px;
+    }
+}
+
+.ebTable thead tr:nth-child(2) {
+    height: 2.6rem;
+
+    th {
+        height: 2.6rem;
+    }
+}

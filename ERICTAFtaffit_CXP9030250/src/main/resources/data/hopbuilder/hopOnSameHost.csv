@@ -1,0 +1,4 @@
+testCaseId,hostname,loginUsername,expectedOriginalUsername,expectedUser
+TAF_HopBuilder_Func_001,ms1,root,root,litp-admin
+TAF_HopBuilder_Func_002,ms1,root,root,root
+TAF_HopBuilder_Func_010,netsim,netsim,netsim,netsim

@@ -1,0 +1,37 @@
+[
+    {
+        "message": "Field 'name' must not be null or empty",
+        "messageTemplate": "Field '{value}' must not be null or empty",
+        "invalidValue": null
+    },
+    {
+        "message": "Field 'surname' must not be null or empty",
+        "messageTemplate": "Field '{value}' must not be null or empty",
+        "invalidValue": null
+    },
+    {
+        "message": "Field 'email' must not be null",
+        "messageTemplate": "Field '{value}' must not be null",
+        "invalidValue": null
+    },
+    {
+        "message": "Field 'description' must not be null or empty",
+        "messageTemplate": "Field '{value}' must not be null or empty",
+        "invalidValue": null
+    },
+    {
+        "message": "Field 'role' must not be null or empty",
+        "messageTemplate": "Field '{value}' must not be null or empty",
+        "invalidValue": null
+    },
+    {
+        "message": "Field 'teams' must not be null or empty",
+        "messageTemplate": "Field '{value}' must not be null or empty",
+        "invalidValue": "[]"
+    },
+    {
+        "message": "Field 'gender' must not be null or empty",
+        "messageTemplate": "Field '{value}' must not be null or empty",
+        "invalidValue": null
+    }
+]

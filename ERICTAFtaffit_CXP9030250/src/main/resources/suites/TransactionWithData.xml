@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TransactionWithData">
+
+    <test name="TransactionWithData" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.TransactionWithData"/>
+        </classes>
+    </test>
+
+</suite>

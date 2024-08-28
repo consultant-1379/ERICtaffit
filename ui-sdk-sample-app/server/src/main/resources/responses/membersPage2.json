@@ -1,0 +1,85 @@
+{
+    "totalCount": 15,
+    "items": [
+        {
+            "id": "11",
+            "name": "Vladislav",
+            "surname": "Korehov",
+            "role": {
+                "name": "Software Developer"
+            },
+            "signum": "evlakor",
+            "email": "vladislav.korehov@ericsson.com",
+            "teams": [
+                {
+                    "name": "TMS"
+                }
+            ]
+        },
+        {
+            "id": "12",
+            "name": "Ruslan",
+            "surname": "Bobrov",
+            "role": {
+                "name": "Software Developer"
+            },
+            "signum": "erusbob",
+            "email": "ruslan.bobrov@ericsson.com",
+            "teams": [
+                {
+                    "name": "TMS"
+                }
+            ]
+        },
+        {
+            "id": "13",
+            "name": "Kirill",
+            "surname": "Shepitko",
+            "role": {
+                "name": "Lead Software Developer"
+            },
+            "signum": "ekirshe",
+            "email": "kirill.shepitko@ericsson.com",
+            "teams": [
+                {
+                    "name": "TAF UI"
+                }
+            ]
+        },
+        {
+            "id": "14",
+            "name": "James",
+            "surname": "Buckley",
+            "role": {
+                "name": "Software Developer"
+            },
+            "signum": "ejambuc",
+            "email": "james.buckley@ericsson.com",
+            "teams": [
+                {
+                    "name": "TAF UI"
+                }
+            ]
+        },
+        {
+            "id": "15",
+            "name": "Denis",
+            "surname": "Belov",
+            "role": {
+                "name": "Web Developer"
+            },
+            "signum": "edenbel",
+            "email": "denis.belov@ericsson.com",
+            "teams": [
+                {
+                    "name": "UI SDK"
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "query": {
+            "criteria": {}
+        }
+    }
+}

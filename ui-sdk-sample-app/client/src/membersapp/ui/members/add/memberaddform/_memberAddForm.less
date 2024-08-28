@@ -1,0 +1,65 @@
+.eaMembersApp-MemberForm {
+    &-fieldsBlock {
+        float: left;
+        width: 49%;
+    }
+    &-optionsBlock {
+        float: right;
+        width: 49%;
+    }
+
+    &-label {
+        width: 100%;
+        margin-bottom: 1.8rem;
+        white-space: normal;
+
+        &Text {
+            width: auto;
+            line-height: 2rem;
+            font-weight: bold;
+            color: #333333;
+        }
+    }
+    &-input, &-textArea {
+        display: block;
+        width: 100%;
+    }
+    &-textArea {
+        resize: vertical;
+        min-height: 200px;
+    }
+    &-draggableElement {
+        cursor: move;
+        margin: 20px 0;
+        border: solid 2px #00625F;
+        background-color: #89BA17;
+        width: 30rem;
+        height: 5rem;
+        line-height: 5rem;
+        border-radius: 5px;
+        text-align: center;
+
+        /* Prevent the text contents of draggable elements from being selectable. */
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        /* Required to make elements draggable in old WebKit */
+        -khtml-user-drag: element;
+        -webkit-user-drag: element;
+    }
+    &-droppableArea {
+        padding: 10px;
+        height: 20rem;
+        line-height: 20rem;
+        text-align: center;
+        border: solid 1px #CCCCCC;
+        border-radius: 5px;
+        background-color: #EEEEEE;
+
+        &_over {
+            border: dashed 2px #666666;
+            padding: 9px;
+        }
+    }
+}

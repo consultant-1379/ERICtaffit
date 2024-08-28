@@ -1,0 +1,10 @@
+{
+  "name": "members-app",
+  "private": true,
+  "devDependencies": {
+    "jscs": "~1.7.3",
+    "jshint": "~2.5.10",
+    "glob": "~4.0.6",
+    "underscore": "~1.7.0"
+  }
+}

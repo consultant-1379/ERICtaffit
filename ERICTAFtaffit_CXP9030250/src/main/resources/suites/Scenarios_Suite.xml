@@ -1,0 +1,48 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Scenarios Test Suite" parallel="methods">
+
+    <test name="Scenarios_DataDriven" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.scenario.DataDrivenTest"/>
+        </classes>
+    </test>
+
+    <test name="Scenarios_DataSources" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.scenario.DataSourcesTest"/>
+        </classes>
+    </test>
+
+    <test name="ExceptionHandlers" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.scenario.ExceptionHandlersTest"/>
+        </classes>
+    </test>
+
+    <test name="ScenarioListeners" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.scenario.ScenarioListenersTest"/>
+        </classes>
+    </test>
+
+    <test name="Scenarios_ScenarioBuilder" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.scenario.ScenarioBuilderTest"/>
+        </classes>
+    </test>
+
+    <test name="Scenarios_ScenarioExecution" preserve-order="true" parallel="false">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.taffit.test.cases.scenario.ScenarioExecutionTest"/>
+        </classes>
+    </test>
+
+
+    <!-- TODO: uncomment once race condition is fixed -->
+    <!--<test name="Scenarios_ContextConcurrency" preserve-order="true">-->
+    <!--<classes>-->
+    <!--<class name="com.ericsson.cifwk.taf.taffit.test.cases.scenario.ContextConcurrencyTest"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+
+</suite>

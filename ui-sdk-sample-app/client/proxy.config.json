@@ -1,0 +1,10 @@
+{
+    "mappings": [
+        {
+            "source": "/api"
+        }
+    ],
+    "host": "localhost",
+    "port": 8882,
+    "headers": {"X-Custom-Header": "cdt2"}
+}

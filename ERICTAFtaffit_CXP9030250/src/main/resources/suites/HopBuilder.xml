@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="HopBuilder_Suite">
+
+    <test name="HopBuilder_Test">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.tools.cli.HopBuilderTest">
+            <methods>
+                <exclude name="hopToServerWithHostAndFileOnly" />
+                <exclude name="hopToServerWithHostUserAndFile"/>
+                <exclude name="hopToServerWithHostStrictAuthAndFile"/>
+                <exclude name="hopToServerWithHostUserStrictAuthAndFile"/>
+                <exclude name="verifyHopFromSvcToVmThrowsFailure"/>
+                <exclude name="verifyFailureHoppingAsCloudUserFromMSToSVC"/>
+            </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

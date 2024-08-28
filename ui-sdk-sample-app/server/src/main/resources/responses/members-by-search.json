@@ -1,0 +1,43 @@
+{
+    "totalCount": 2,
+    "items": [
+        {
+            "id": "1",
+            "name": "Victor",
+            "surname": "Ovchinnikov",
+            "role": {
+                "name": "Lead Cook & Wan Fu"
+            },
+            "signum": "evicovc",
+            "email": "victor.ovchinnikov@ericsson.com",
+            "teams": [
+                {
+                    "name": "TAF"
+                },
+                {
+                    "name": "TMS"
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "name": "Victor",
+            "surname": "Pupkin",
+            "role": {
+                "name": "Web developer"
+            },
+            "signum": "evicpup",
+            "email": "victor.pupkin@ericsson.com",
+            "teams": [
+                {
+                    "name": "TMS"
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "query": {
+            "criteria": {}
+        }
+    }
+}

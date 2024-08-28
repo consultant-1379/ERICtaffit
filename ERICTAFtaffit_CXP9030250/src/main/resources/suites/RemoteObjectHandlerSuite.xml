@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="RemoteObjectHandlerSuite">
+    <test name="Remote Object Handler Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.tools.cli.RemoteObjectHandlerTest"/>
+        </classes>
+    </test>
+    <test name="Remote Object Handler with Private key Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.tools.cli.RemoteObjectHandlerTestWithSshKey"/>
+        </classes>
+    </test>
+    <test name="Remote Object Handler Test - " preserve-order="true">
+        <classes>
+            <class name="com.ericsson.cifwk.taf.tools.cli.RemoteObjectHandlerTestScenarios"/>
+        </classes>
+    </test>
+</suite>
